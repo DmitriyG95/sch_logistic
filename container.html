@@ -1,0 +1,1546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЖД перевозки</title>
+    <!--шрифты  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style_sch.css">
+    <link rel="stylesheet" href="css/style_transportation.css">
+
+</head>
+<body>
+    <section class="transportation_head">
+        <div class="container">
+            <div class="transportation_head__cont">
+                <h1>Контейнерные перевозки железнодорожным транспортом</h1>
+                <p>
+                    Компания SCH Logistic организует контейнерные перевозки ж/д транспортом. Мы доставляем грузы по России и за ее пределы. Прочные стены тары надежно защищают содержимое от ультрафиолета, пыли и других неблагоприятных факторов. Товары поступают в пункт назначения в целости и сохранности, точно в срок, так как поезд, в отличие от автомобилей, следует по расписанию и не отклоняется от графика.
+                </p>
+                <div class="transportation_head__buttons">
+                    <a href="#price" class="transportation_head__button button button--blue"><span>Рассчитать стоимость</span> </a>
+                    <a href="#zayavka" class="transportation_head__button button button--white"><span> Оставить заявку</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="uk-section uk-section-default breadcrumbs-container">
+        <div class="uk-container">
+            <div class="uk-grid-margin uk-grid uk-grid-stack">
+                <div class="uk-width-1-1@m uk-first-column">
+                    <div class="uk-margin">
+                        <div id="breadcrumbs">
+                            <ul class="items" itemscope itemtype="http://schema.org/BreadcrumbList">
+                                <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                    <meta itemprop="item" content="https://sch-logistic.ru//" />
+                                    <a href="/">
+                                        <i class="fas fa-home"></i>
+                                        <span itemprop="name" style="display: none;">Главная</span>
+                                        <meta itemprop="position" content="1" />
+                                    </a>
+                                </li> <i class="fas fa-angle-right"></i>
+                                <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                    <a itemprop="item" href="gruzoperevozki/kontejnernyie-perevozki-gruzov/">
+                                        <span itemprop="name">Контейнеры</span>
+                                        <meta itemprop="position" content="2" />
+                                    </a>
+                                </li> <i class="fas fa-angle-right"></i>
+                                <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="active">
+                                    <meta itemprop="item" content="https://sch-logistic.ru/gruzoperevozki/kontejnernyie-perevozki-gruzov/" />
+                                    <span itemprop="name">ЖД перевозки</span>
+                                    <meta itemprop="position" content="3" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="transportation_tabs">
+        <div class="container">
+            <ul id="tabs">
+
+                <li><a data-id="tab1">Особенности ж/д перевозок</a></li>
+                <li><a data-id="tab2">Преимущества ж/д перевозок</a></li>
+                <li><a data-id="tab3">Характеристика и нормы</a></li>
+                <li><a data-id="tab4">Виды грузов</a></li>
+                <li><a data-id="tab5">Документы</a></li>
+                <li><a data-id="tab6">Наши кейсы</a></li>
+            </ul>
+            <div class="mobile_tabs">
+                <select class="js-select-1" name="tabs">
+                    <option value="tab1">Особенности ж/д перевозок</option>
+                    <option value="tab2">Преимущества ж/д перевозок</option>
+                    <option value="tab3">Характеристика и нормы</option>
+                    <option value="tab4">Виды грузов</option>
+                    <option value="tab5">Документы</option>
+                    <option value="tab6">Наши кейсы</option>
+                </select>
+            </div>
+                    <div class="transportation_tab__container" id="tab1">
+                        <div>
+                            <h2 class="transportation__title">
+                                Особенности ж/д контейнерных перевозок
+                            </h2>
+                            <div class="transportation_tabs__text columnstwo">
+                                Ж/д транспорт выбирают за удобство, скорость доставки и доступную стоимость. Он подходит для внутренних и международных перевозок. Контейнерная доставка предполагает использование крупнотоннажных контейнеров, в основном 20 и 40 футов. Такие контейнеры имеют стандартные размеры, поэтому их погрузка на подвижной состав обходится без специальной техники.
+                                С помощью контейнерного оборудования по железной дороге можно перевозить большое количество грузов: мебель, бытовую технику, строительные материалы, хорошо упакованные продукты питания и др.
+                            </div>
+                        </div>
+                        
+                        
+
+                    </div>
+                    <div class="transportation_tab__container" id="tab2">
+                        <div>
+                            <h2 class="transportation__title">
+                                Преимущества ж/д перевозок
+                            </h2>
+                            <div class="transportation_tabs__text columnsone">
+                                Железнодорожные перевозки имеют много преимуществ. Среди плюсов нужно отметить универсальность — по железной дороге можно доставить груз в удаленный населенный пункт, вблизи которого находится ж/д станция. К другим преимуществам относят:                            
+                            </div>
+                        </div>
+                        <div class="transportation_tab__benefits">
+                            <div class="transportation_tab__benefit">
+                                <div class="transportation_tab__benefit_img">
+                                    <img src="img/perevozki/icons/benefit_img1.svg" alt="" >
+                                </div>
+                                <div class="transportation_tab__benefit_title">
+                                    Отсутствие ограничений в виде погодных условий
+                                </div>
+                                <div class="transportation_tab__benefit_text">
+                                    Перевозка грузов по железной дороге осуществляется в любое время года и практически не зависит от погодных условий, чего нельзя сказать о морском или, например, воздушном транспорте. Кроме того, ж/д перевозки легко отследить и проконтролировать.
+                                </div>
+                            </div>
+                            <div class="transportation_tab__benefit">
+                                <div class="transportation_tab__benefit_img">
+                                    <img src="img/perevozki/icons/benefit_img2.svg" alt="" >
+                                </div>
+                                <div class="transportation_tab__benefit_title">
+                                    Сохранность грузов
+                                </div>
+                                <div class="transportation_tab__benefit_text">
+                                    При перевозки поездом грузы не соприкасается с друг другом, за счет высококачественных контейнеров из износостойких материалов, которые закрывают на специальные замки пломбируют, что важно при транспортировке химических реактивов и других товаров и исключает вероятность хищения. 
+                                </div>
+                            </div>
+                            <div class="transportation_tab__benefit">
+                                <div class="transportation_tab__benefit_img">
+                                    <img src="img/perevozki/icons/benefit_img3.svg" alt="" >
+                                </div>
+                                <div class="transportation_tab__benefit_title">
+                                    Экономия
+                                </div>
+                                <div class="transportation_tab__benefit_text">
+                                    Хранение груза на площадке ж/д станции в контейнере не требует дополнительных вложений. Специальная тара устраняет необходимость складирования, проведения дополнительных погрузочно-разгрузочных работ.
+                                </div>
+                            </div>
+                            <div class="transportation_tab__benefit">
+                                <div class="transportation_tab__benefit_img">
+                                    <img src="img/perevozki/icons/benefit_img4.svg" alt="" >
+                                </div>
+                                <div class="transportation_tab__benefit_title">
+                                    Возможность транспортировки крупногабаритных товаров
+                                </div>
+                                <div class="transportation_tab__benefit_text">
+                                    Например, в 40-футовом контейнере можно перевозить легковые автомобили.
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="transportation_tabs__text columnsone">
+                                В одной таре можно размещать грузы разных отправителей, что позволяет доставлять единичные товары и сокращает расходы на транспортировку.                         
+                            </div>
+                        </div>
+                    </div>
+                    <div class="transportation_tab__container" id="tab3">
+                        <div>
+                            <h2 class="transportation__title">
+                                Характеристика и нормы максимальной нагрузки ж/д контейнеров
+                            </h2>
+                            <div class="transportation_tabs__text columnsone">
+                                Максимальная нагрузка для 20-футовых контейнеров составляет 21800 кг, для 40-футового — 26000 кг.                        
+                            </div>
+                            <div class="transportation_tabs__text  columnstwo_chark">
+                                <div>
+                                    <div class="columnstwo_chark__title">
+                                        20-футовый
+                                    </div>
+                                    <div class="columnstwo_chark__text">
+                                        длина составляет 5,9 м, высота 2,34 м и ширина 2,35 м (по внутренней стороне). Грузоподъемность — 24 тонны, грузовместимость — 33,9 м³.
+                                    </div>
+                                </div>    
+                                <div>
+                                    <div class="columnstwo_chark__title">
+                                        40-футовый
+                                    </div>
+                                    <div class="columnstwo_chark__text">
+                                        длина по внешней стороне — 12 м, ширина — 2,5 м. Высота составляет 2,5 м в стандартном исполнении и 2,8 м в нестандартном. Грузоподъемность — 24-28 тонн, грузовместимость — 67-76 м³, в зависимости от высоты.
+                                    </div>
+                                </div>                    
+                            </div>
+                        </div>
+                        <div class="transportation_tab__table">
+                            <table>
+                                <tr>
+                                    <th></th>
+                                    <th>	20 DC</th>
+                                    <th>	40 DC</th>
+                                    <th>45 HC</th>
+                                </tr>
+                                <tr class="table_title">
+                                    <td>Внешние размеры</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Длина, мм</td>
+                                    <td>6058</td>
+                                    <td>12192</td>
+                                    <td>13742</td>
+                                </tr>
+                                <tr>
+                                    <td>Ширина, мм</td>
+                                    <td>2438</td>
+                                    <td>2500</td>
+                                    <td>2438</td>
+                                </tr>
+                                <tr>
+                                    <td>Высота, мм</td>
+                                    <td>2591</td>
+                                    <td>2590</td>
+                                    <td>2896</td>
+                                </tr>
+                                <tr class="table_title">
+                                    <td>Внутренние размеры</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Длина, мм</td>
+                                    <td>6058</td>
+                                    <td>12192</td>
+                                    <td>13742</td>
+                                </tr>
+                                <tr>
+                                    <td>Ширина, мм</td>
+                                    <td>2438</td>
+                                    <td>2500</td>
+                                    <td>2438</td>
+                                </tr>
+                                <tr>
+                                    <td>Высота, мм</td>
+                                    <td>2591</td>
+                                    <td>2590</td>
+                                    <td>2896</td>
+                                </tr>
+                                <tr class="table_title">
+                                    <td>Дверной проем</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Ширина, мм</td>
+                                    <td>2438</td>
+                                    <td>2500</td>
+                                    <td>2438</td>
+                                </tr>
+                                <tr>
+                                    <td>Высота, мм</td>
+                                    <td>2591</td>
+                                    <td>2590</td>
+                                    <td>2896</td>
+                                </tr>
+                                <tr class="table_title">
+                                    <td>Характеристики</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>max Брутто, кг</td>
+                                    <td>	24000-30480</td>
+                                    <td></td>
+                                    <td>4100</td>
+                                </tr>
+                                <tr>
+                                    <td>Масса тары, кг</td>
+                                    <td>2145-2370</td>
+                                    <td>3800</td>
+                                    <td>28300</td>
+                                </tr>
+                                <tr>
+                                    <td>Полезная нагрузка, кг</td>
+                                    <td>21630-28335</td>
+                                    <td>26700</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Объём, куб.м</td>
+                                    <td>	33-33,2</td>
+                                    <td>67,5</td>
+                                    <td>85,7</td>
+                                </tr>
+                                <tr>
+                                    <td>Размер</td>
+                                    <td>	20 футов</td>
+                                    <td>	40 футов</td>
+                                    <td>45 футов</td>
+                                </tr>
+                                <tr>
+                                    <td>Количество вмещаемых
+                                        европаллет (1200х800мм), шт</td>
+                                    <td>11</td>
+                                    <td>25</td>
+                                    <td>33</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="transportation_tab__container" id="tab4">
+                        <div>
+                            <h2 class="transportation__title">
+                                Виды перевозимых грузов
+                            </h2>
+                            <div class="transportation_tabs__text columnsone">
+                                Для осуществления железнодорожной перевозки потребуются документы:
+                            </div>
+                        </div>
+                        <div class="transportation_tab__benefits transportation_tab__benefits--plans">
+                            <div class="transportation_tab__benefit">
+                                <div class="transportation_tab__benefit_img">
+                                    <img src="img/perevozki/icons/types_1.svg" alt="" >
+                                </div>
+                                <div class="transportation_tab__benefit_title">
+                                    Генеральные грузы
+                                </div>
+                                <div class="transportation_tab__benefit_text">
+                                    Металлопродукция, подвижная техника, железобетонные изделия, лесоматериалы, руды, катно-бочковые грузы и т. д.
+                                </div>
+                            </div>
+                            <div class="transportation_tab__benefit">
+                                <div class="transportation_tab__benefit_img">
+                                    <img src="img/perevozki/icons/types_2.svg" alt="" >
+                                </div>
+                                <div class="transportation_tab__benefit_title">
+                                    Рефрижераторные грузы
+                                </div>
+                                <div class="transportation_tab__benefit_text">
+                                    Перевозки грузов, требующих соблюдения особого температурного режима: продукты питания, фармацевтические препараты
+                                </div>
+                            </div>
+                            <div class="transportation_tab__benefit">
+                                <div class="transportation_tab__benefit_img">
+                                    <img src="img/perevozki/icons/types_3.svg" alt="" >
+                                </div>
+                                <div class="transportation_tab__benefit_title">
+                                    Опасные грузы
+                                </div>
+                                <div class="transportation_tab__benefit_text">
+                                    Грузы разных классов опасности: газы, легковоспламеняющиеся жидкости и твердые вещества
+                                </div>
+                            </div>
+                            <div class="transportation_tab__benefit">
+                                <div class="transportation_tab__benefit_img">
+                                    <img src="img/perevozki/icons/types_4.svg" alt="" >
+                                </div>
+                                <div class="transportation_tab__benefit_title">
+                                    Крупногабаритные грузы
+                                </div>
+                                <div class="transportation_tab__benefit_text">
+                                    Строительная техника, генераторы и распределительные пункты, сельскохозяйственная техника, нефтяное оборудование
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="transportation_tab__container" id="tab5">
+                        <div>
+                            <h2 class="transportation__title">
+                                Какие документы нужны для доставки груза контейнером
+                            </h2>
+                            <div class="transportation_tabs__text columnsone">
+                                Для осуществления железнодорожной перевозки потребуются документы:
+                            </div>
+                        </div>
+                        <div>
+                            <div class="transportation_tabs__text  columnstwo_chark">
+                                <div>
+                                    <div class="columnstwo_chark__title">
+                                        Железнодорожная накладная
+                                    </div>
+                                    <div class="columnstwo_chark__text">
+                                        которая выполняет функции договора на перемещение груза. Содержит данные о пункте отправления и прибытия, сведения об отправителе и получателе, дату перевозки и другую информацию.
+                                    </div>
+                                </div>    
+                                <div>
+                                    <div class="columnstwo_chark__title">
+                                        Квитанция (Инвойс)
+                                    </div>
+                                    <div class="columnstwo_chark__text">
+                                        для оплаты доставленного груза грузополучателем. Документ содержит информацию о транспорте, условиях перевозки, а также данные о контракте, подписи и печати ответственных лиц.
+                                    </div>
+                                </div>  
+                                <div>
+                                    <div class="columnstwo_chark__title">
+                                        Транзитная декларация
+                                    </div>
+                                    <div class="columnstwo_chark__text">
+                                        Требуется для помещения груза под режим таможенного транзита. Этот документ содержит информацию об отправителе, перевозчике и других лицах, участвующих в перевозке товаров.
+                                    </div>
+                                </div>  
+                                <div>
+                                    <div class="columnstwo_chark__title">
+                                        Страховой полис
+                                    </div>
+                                    <div class="columnstwo_chark__text">
+                                        подтверждающий оформление страховки на доставляемый груз.
+                                    </div>
+                                </div>                    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="transportation_tab__container" id="tab6">
+                        <div>
+                            <h2 class="transportation__title">
+                                Кому мы помогли
+                            </h2>
+                            
+                            <div class="slider_help__cont ">
+                                <div class="swiper">
+                                    <div class="slider_help__slider swiper-wrapper">
+
+                                        <div class="swiper-slide">
+                                            <a data-fancybox="help_images" href="img/perevozki/slider/img1.jpg"  ><img src="img/perevozki/slider/img1.jpg" /></a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a data-fancybox="help_images" href="img/perevozki/slider/img2.jpg"  ><img src="img/perevozki/slider/img2.jpg" /></a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a data-fancybox="help_images" href="img/perevozki/slider/img1.jpg"  ><img src="img/perevozki/slider/img1.jpg" /></a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a data-fancybox="help_images" href="img/perevozki/slider/img2.jpg"  ><img src="img/perevozki/slider/img2.jpg" /></a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a data-fancybox="help_images" href="img/perevozki/slider/img1.jpg"  ><img src="img/perevozki/slider/img1.jpg" /></a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a data-fancybox="help_images" href="img/perevozki/slider/img2.jpg"  ><img src="img/perevozki/slider/img2.jpg" /></a>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                
+                                </div>
+                                
+                                <div class="swiper-button-prev swiper_btn"></div>
+                                <div class="swiper-button-next swiper_btn"></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+        </div>
+        
+               
+    </section>
+
+    <!-- цены и направления -->
+    <section class="pricetable">
+        <div class="container">
+            <h2 class="transportation__title">
+                Цены и направления контейнерных перевозок
+            </h2>
+            <div class="transportation_tabs__text columnsone">
+                Ознакомиться с ценами контейнерных перевозок по железной дороге можно в нашей таблице. Если останутся вопросы, вы всегда можете обратиться к менеджерам SCH Logistic.
+            </div>
+            <!-- список табов -->
+            <div class="pricetable_city">
+                <span>Выбрать город отправления:</span>
+                <div class="pricetable_city__choose">
+                        <select id="city" name="tabs">
+                            <option>Москва</option>
+                            <option>Барнаул</option>
+                            <option>Белгород</option>
+                            <option>Брянск</option>
+                            <option>Владимир</option>
+                            <option>Вологда</option>
+                            <option>Воронеж</option>
+                            <option>Екатеринбург</option>
+                            <option>Иваново</option>
+                            <option>Калуга</option>
+                            <option>Кемерово</option>
+                            <option>Кострома</option>
+    
+                            <option>Курск</option>
+                            <option>Липецк</option>
+                            <option>Нижний Новгород</option>
+                            <option>Новосибирск</option>
+                            <option>Орёл</option>
+                            <option>Пенза</option>
+    
+                            <option>Пермь</option>
+                            <option>Рязань</option>
+                            <option>Санкт-Петербург</option>
+                            <option>Смоленск</option>
+                            <option>Сургут</option>
+                            <option>Тамбов</option>
+    
+                            <option>Тверь</option>
+                            <option>Тула</option>
+                            <option>Тюмень</option>
+                            <option>Челябинск</option>
+                            <option>Челябинск</option>
+                        </select>
+                </div>
+            </div>
+            <div class="pricetable_fixed">
+                <table>
+                    <tr>
+                        <th class="napr">Отправка контейнеров по направлениям</th>
+                        <th class="first_weight">20 фут.</th>
+                        <th class="second_weight">40 фут.</th>
+                        <th class="time">Время в пути</th>
+                        <th class="distance">Расстояние</th>
+                    </tr> 
+                </table>
+            </div>
+            <div class="pricetable_sliders">
+                <div data-city="Москва" class="pricetable_slider">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                              <table>
+                                  
+                                  <tr>
+                                      <td class="napr">Москва - Владивосток</td>
+                                      <td class="first_weight">81500 руб.</td>
+                                      <td class="second_weight">140000 руб.</td>
+                                      <td class="time">12 дней</td>
+                                      <td class="distance">9329 км</td>
+                                  </tr>
+                                  <tr>
+                                      <td class="napr">Москва - Хабаровск</td>
+                                      <td class="first_weight">89000 руб.</td>
+                                      <td class="second_weight">167500 руб.</td>
+                                      <td class="time">12 дней</td>
+                                      <td class="distance">8573 км</td>
+                                  </tr>
+                                  <tr>
+                                      <td class="napr">Москва - Улан-Удэ</td>
+                                      <td class="first_weight">74000 руб.	</td>
+                                      <td class="second_weight">132000 руб.</td>
+                                      <td class="time">7 дней</td>
+                                      <td class="distance">5679 км</td>
+                                  </tr>
+                                  <tr>
+                                      <td class="napr">Москва - Красноярск</td>
+                                      <td class="first_weight">50500 руб.</td>
+                                      <td class="second_weight">90200 руб.</td>
+                                      <td class="time">6 дней</td>
+                                      <td class="distance">4133 км</td>
+                                  </tr>
+                                  <tr>
+                                      <td class="napr">Москва - Абакан</td>
+                                      <td class="first_weight">83 000 руб.	</td>
+                                      <td class="second_weight">262 200 руб.</td>
+                                      <td class="time">-</td>
+                                      <td class="distance">-</td>
+                                  </tr>
+                              </table>
+                          </div>
+                          <div class="swiper-slide">
+                            <table>
+                                
+                                <tr>
+                                    <td class="napr">Москва - Владивосток</td>
+                                    <td class="first_weight">81500 руб.</td>
+                                    <td class="second_weight">140000 руб.</td>
+                                    <td class="time">12 дней</td>
+                                    <td class="distance">9329 км</td>
+                                </tr>
+                                <tr>
+                                    <td class="napr">Москва - Хабаровск</td>
+                                    <td class="first_weight">89000 руб.</td>
+                                    <td class="second_weight">167500 руб.</td>
+                                    <td class="time">12 дней</td>
+                                    <td class="distance">8573 км</td>
+                                </tr>
+                                <tr>
+                                    <td class="napr">Москва - Улан-Удэ</td>
+                                    <td class="first_weight">74000 руб.	</td>
+                                    <td class="second_weight">132000 руб.</td>
+                                    <td class="time">7 дней</td>
+                                    <td class="distance">5679 км</td>
+                                </tr>
+                                <tr>
+                                    <td class="napr">Москва - Красноярск</td>
+                                    <td class="first_weight">50500 руб.</td>
+                                    <td class="second_weight">90200 руб.</td>
+                                    <td class="time">6 дней</td>
+                                    <td class="distance">4133 км</td>
+                                </tr>
+                                <tr>
+                                    <td class="napr">Москва - Абакан</td>
+                                    <td class="first_weight">83 000 руб.	</td>
+                                    <td class="second_weight">262 200 руб.</td>
+                                    <td class="time">-</td>
+                                    <td class="distance">-</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="swiper-slide">
+                            <table>
+                                
+                                <tr>
+                                    <td class="napr">Москва - Владивосток</td>
+                                    <td class="first_weight">81500 руб.</td>
+                                    <td class="second_weight">140000 руб.</td>
+                                    <td class="time">12 дней</td>
+                                    <td class="distance">9329 км</td>
+                                </tr>
+                                <tr>
+                                    <td class="napr">Москва - Хабаровск</td>
+                                    <td class="first_weight">89000 руб.</td>
+                                    <td class="second_weight">167500 руб.</td>
+                                    <td class="time">12 дней</td>
+                                    <td class="distance">8573 км</td>
+                                </tr>
+                                <tr>
+                                    <td class="napr">Москва - Улан-Удэ</td>
+                                    <td class="first_weight">74000 руб.	</td>
+                                    <td class="second_weight">132000 руб.</td>
+                                    <td class="time">7 дней</td>
+                                    <td class="distance">5679 км</td>
+                                </tr>
+                                <tr>
+                                    <td class="napr">Москва - Красноярск</td>
+                                    <td class="first_weight">50500 руб.</td>
+                                    <td class="second_weight">90200 руб.</td>
+                                    <td class="time">6 дней</td>
+                                    <td class="distance">4133 км</td>
+                                </tr>
+                                <tr>
+                                    <td class="napr">Москва - Абакан</td>
+                                    <td class="first_weight">83 000 руб.	</td>
+                                    <td class="second_weight">262 200 руб.</td>
+                                    <td class="time">-</td>
+                                    <td class="distance">-</td>
+                                </tr>
+                            </table>
+                        </div>
+                        </div>
+                        
+                    </div>
+                    <div class="swiper-button-prev swiper_btn"></div>
+                    <div class="swiper-button-next swiper_btn"></div>
+                </div>
+                <div data-city="Барнаул" class="pricetable_slider">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                              <table>
+                                  
+                                  <tr>
+                                      <td>Барнаул - Владивосток</td>
+                                      <td>81500 руб.</td>
+                                      <td>140000 руб.</td>
+                                      <td>12 дней</td>
+                                      <td>9329 км</td>
+                                  </tr>
+                                  <tr>
+                                      <td>Барнаул - Хабаровск</td>
+                                      <td>89000 руб.</td>
+                                      <td>167500 руб.</td>
+                                      <td>12 дней</td>
+                                      <td>8573 км</td>
+                                  </tr>
+                                  <tr>
+                                      <td>Барнаул - Улан-Удэ</td>
+                                      <td>74000 руб.	</td>
+                                      <td>132000 руб.</td>
+                                      <td>7 дней</td>
+                                      <td>5679 км</td>
+                                  </tr>
+                                  <tr>
+                                      <td>Барнаул - Красноярск</td>
+                                      <td>50500 руб.</td>
+                                      <td>90200 руб.</td>
+                                      <td>6 дней</td>
+                                      <td>4133 км</td>
+                                  </tr>
+                                  <tr>
+                                      <td>Барнаул - Абакан</td>
+                                      <td>83 000 руб.	</td>
+                                      <td>262 200 руб.</td>
+                                      <td>-</td>
+                                      <td>-</td>
+                                  </tr>
+                              </table>
+                          </div>
+                          <div class="swiper-slide">
+                            <table>
+                                
+                                <tr>
+                                    <td>Москва - Владивосток</td>
+                                    <td>81500 руб.</td>
+                                    <td>140000 руб.</td>
+                                    <td>12 дней</td>
+                                    <td>9329 км</td>
+                                </tr>
+                                <tr>
+                                    <td>Москва - Хабаровск</td>
+                                    <td>89000 руб.</td>
+                                    <td>167500 руб.</td>
+                                    <td>12 дней</td>
+                                    <td>8573 км</td>
+                                </tr>
+                                <tr>
+                                    <td>Москва - Улан-Удэ</td>
+                                    <td>74000 руб.	</td>
+                                    <td>132000 руб.</td>
+                                    <td>7 дней</td>
+                                    <td>5679 км</td>
+                                </tr>
+                                <tr>
+                                    <td>Москва - Красноярск</td>
+                                    <td>50500 руб.</td>
+                                    <td>90200 руб.</td>
+                                    <td>6 дней</td>
+                                    <td>4133 км</td>
+                                </tr>
+                                <tr>
+                                    <td>Москва - Абакан</td>
+                                    <td>83 000 руб.	</td>
+                                    <td>262 200 руб.</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="swiper-slide">
+                            <table>
+                                
+                                <tr>
+                                    <td>Москва - Владивосток</td>
+                                    <td>81500 руб.</td>
+                                    <td>140000 руб.</td>
+                                    <td>12 дней</td>
+                                    <td>9329 км</td>
+                                </tr>
+                                <tr>
+                                    <td>Москва - Хабаровск</td>
+                                    <td>89000 руб.</td>
+                                    <td>167500 руб.</td>
+                                    <td>12 дней</td>
+                                    <td>8573 км</td>
+                                </tr>
+                                <tr>
+                                    <td>Москва - Улан-Удэ</td>
+                                    <td>74000 руб.	</td>
+                                    <td>132000 руб.</td>
+                                    <td>7 дней</td>
+                                    <td>5679 км</td>
+                                </tr>
+                                <tr>
+                                    <td>Москва - Красноярск</td>
+                                    <td>50500 руб.</td>
+                                    <td>90200 руб.</td>
+                                    <td>6 дней</td>
+                                    <td>4133 км</td>
+                                </tr>
+                                <tr>
+                                    <td>Москва - Абакан</td>
+                                    <td>83 000 руб.	</td>
+                                    <td>262 200 руб.</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                </tr>
+                            </table>
+                        </div>
+                        </div>
+                        
+                    </div>
+                    <div class="swiper-button-prev swiper_btn"></div>
+                    <div class="swiper-button-next swiper_btn"></div>
+                </div>
+                <div data-city="Белгород" class="pricetable_slider">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                              <table>
+                                  
+                                  <tr>
+                                      <td>Белгород - Владивосток</td>
+                                      <td>81500 руб.</td>
+                                      <td>140000 руб.</td>
+                                      <td>12 дней</td>
+                                      <td>9329 км</td>
+                                  </tr>
+                                  <tr>
+                                      <td>Белгород - Хабаровск</td>
+                                      <td>89000 руб.</td>
+                                      <td>167500 руб.</td>
+                                      <td>12 дней</td>
+                                      <td>8573 км</td>
+                                  </tr>
+                                  <tr>
+                                      <td>Белгород - Улан-Удэ</td>
+                                      <td>74000 руб.	</td>
+                                      <td>132000 руб.</td>
+                                      <td>7 дней</td>
+                                      <td>5679 км</td>
+                                  </tr>
+                                  <tr>
+                                      <td>Белгород - Красноярск</td>
+                                      <td>50500 руб.</td>
+                                      <td>90200 руб.</td>
+                                      <td>6 дней</td>
+                                      <td>4133 км</td>
+                                  </tr>
+                                  <tr>
+                                      <td>Белгород - Абакан</td>
+                                      <td>83 000 руб.	</td>
+                                      <td>262 200 руб.</td>
+                                      <td>-</td>
+                                      <td>-</td>
+                                  </tr>
+                              </table>
+                          </div>
+                          <div class="swiper-slide">
+                            <table>
+                                
+                                <tr>
+                                    <td>Москва - Владивосток</td>
+                                    <td>81500 руб.</td>
+                                    <td>140000 руб.</td>
+                                    <td>12 дней</td>
+                                    <td>9329 км</td>
+                                </tr>
+                                <tr>
+                                    <td>Москва - Хабаровск</td>
+                                    <td>89000 руб.</td>
+                                    <td>167500 руб.</td>
+                                    <td>12 дней</td>
+                                    <td>8573 км</td>
+                                </tr>
+                                <tr>
+                                    <td>Москва - Улан-Удэ</td>
+                                    <td>74000 руб.	</td>
+                                    <td>132000 руб.</td>
+                                    <td>7 дней</td>
+                                    <td>5679 км</td>
+                                </tr>
+                                <tr>
+                                    <td>Москва - Красноярск</td>
+                                    <td>50500 руб.</td>
+                                    <td>90200 руб.</td>
+                                    <td>6 дней</td>
+                                    <td>4133 км</td>
+                                </tr>
+                                <tr>
+                                    <td>Москва - Абакан</td>
+                                    <td>83 000 руб.	</td>
+                                    <td>262 200 руб.</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="swiper-slide">
+                            <table>
+                                
+                                <tr>
+                                    <td>Москва - Владивосток</td>
+                                    <td>81500 руб.</td>
+                                    <td>140000 руб.</td>
+                                    <td>12 дней</td>
+                                    <td>9329 км</td>
+                                </tr>
+                                <tr>
+                                    <td>Москва - Хабаровск</td>
+                                    <td>89000 руб.</td>
+                                    <td>167500 руб.</td>
+                                    <td>12 дней</td>
+                                    <td>8573 км</td>
+                                </tr>
+                                <tr>
+                                    <td>Москва - Улан-Удэ</td>
+                                    <td>74000 руб.	</td>
+                                    <td>132000 руб.</td>
+                                    <td>7 дней</td>
+                                    <td>5679 км</td>
+                                </tr>
+                                <tr>
+                                    <td>Москва - Красноярск</td>
+                                    <td>50500 руб.</td>
+                                    <td>90200 руб.</td>
+                                    <td>6 дней</td>
+                                    <td>4133 км</td>
+                                </tr>
+                                <tr>
+                                    <td>Москва - Абакан</td>
+                                    <td>83 000 руб.	</td>
+                                    <td>262 200 руб.</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                </tr>
+                            </table>
+                        </div>
+                        </div>
+                        
+                    </div>
+                    <div class="swiper-button-prev swiper_btn"></div>
+                    <div class="swiper-button-next swiper_btn"></div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <section id="price" class="priceform">
+        <div class="container">
+            <h2>
+                Расчет стоимости контейнерных перевозок по России
+            </h2>
+            <form action="" class="form_transportation form_calc">
+                <div class="form_transportation__column">
+                    <div class="form_transportation__row">
+                        <input type="text" placeholder="Откуда">
+                    </div>
+                    <div class="form_transportation__row">
+                        <input type="text" placeholder="Куда">
+                    </div>
+                </div>
+                <div class="form_transportation__column">
+                    <div class="form_transportation__row">
+                        <input type="text" placeholder="Вес контейнера">
+                    </div>
+                    <div class="form_transportation__row form_transportation__buttons">
+                        <span>Итоговая стоимость:</span>
+                        <button type="button" class="btn__submit">Расчитать</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="transportstage">
+        <div class="container">
+            <h2 class="transportation__title">
+                Этапы контейнерных перевозок
+            </h2>
+            <div class="transportation_tabs__text columnstwo">
+                Как только вы обратитесь в компанию, сотрудники рассчитают стоимость доставки, учитывая особенности груза, пункт отправления и приема товара. Далее они подготовят пакет документов для перемещения, определят дату и время погрузки, ее место. После этого груз будет отправлен в пункт назначения, где его примет и оплатит грузополучатель. 
+                В нашей компании вы можете заказать ж/д перевозку груза в контейнере. Мы предлагаем выгодные условия сотрудничества: доступные цены, оперативное выполнение работ, вежливое обслуживание и компетентных специалистов. Для заказа услуги позвоните нам по телефону +7 (495) 136-56-34 или воспользуйтесь формой обратной связи.
+            </div>
+            <div class="transportstage__cont">
+                <div class="transportstage__block">
+                    <div class="transportstage__img">
+                        <img src="img/perevozki/icons/transportstage1.svg" alt="">
+                    </div>
+                    <div class="transportstage__title">
+                        Предлагаем выгодные условия
+                    </div>
+                    <div class="transportstage__text">
+                        Снижаем стоимость транспортировки груза при больших объемах, предоставляем отсрочку платежа
+                    </div>
+                </div>
+                <div class="transportstage__block">
+                    <div class="transportstage__img">
+                        <img src="img/perevozki/icons/transportstage2.svg" alt="">
+                    </div>
+                    <div class="transportstage__title">
+                        Сохраняем озвученную стоимость
+                    </div>
+                    <div class="transportstage__text">
+                        Если для выполнения заказа потребуются дополнительные расходы, цена не изменится
+                    </div>
+                </div>
+                <div class="transportstage__block">
+                    <div class="transportstage__img">
+                        <img src="img/perevozki/icons/transportstage3.svg" alt="">
+                    </div>
+                    <div class="transportstage__title">
+                        Предоставляем места 
+                        для хранения
+                    </div>
+                    <div class="transportstage__text">
+                        Более 2000 м2 складских территорий и 500 контейнеров для продажи и аренды
+                    </div>
+                </div>
+                <div class="transportstage__block">
+                    <div class="transportstage__img">
+                        <img src="img/perevozki/icons/transportstage4.svg" alt="">
+                    </div>
+                    <div class="transportstage__title">
+                        Решаем любые задачи
+                    </div>
+                    <div class="transportstage__text">
+                        При разработке маршрута учитываем все ваши пожелания по срокам 
+                        и финансовым возможностям
+                    </div>
+                </div>
+                <div class="transportstage__block">
+                    <div class="transportstage__img">
+                        <img src="img/perevozki/icons/transportstage5.svg" alt="">
+                    </div>
+                    <div class="transportstage__title">
+                        Доставка негабаритных грузов
+                    </div>
+                    <div class="transportstage__text">
+                        Организуем транспортировку негабаритных и сборных грузов
+                    </div>
+                </div>
+                <div class="transportstage__block">
+                    <div class="transportstage__img">
+                        <img src="img/perevozki/icons/transportstage6.svg" alt="">
+                    </div>
+                    <div class="transportstage__title">
+                        Имеем собственный автопарк
+                    </div>
+                    <div class="transportstage__text">
+                        Свыше 100 единиц транспорта, всегда в исправном состоянии
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="deliveryorder">
+        <div class="container">
+            <h2 class="transportation__title">
+                Сделать заказ на доставку очень просто!
+            </h2>
+            
+            <div class="deliveryorder__list">
+                <ul>
+                    <li>
+                        <span>
+                            Вы оставляете заявку по номеру <a href="tel:++7 (495) 136-56-34">+7 (495) 136-56-34</a> или на сайте
+                        </span> 
+                    </li>
+                    <li>Менеджер составляет для Вас оптимальный маршрут и просчитывают стоимость услуг</li>
+                    <li>Мы заключаем договор на доставку в обговоренные сроки</li>
+                    <li>Доставка и отслеживание контейнера в пути</li>
+                    <li>Когда товар доставлен мы передаем документы о заключении сделки</li>
+                    <li>
+                        <a href="#" class="service_order">Заказать услугу</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="priceform priceform--request" id="zayavka">
+        <div class="container">
+            <h2>
+                Оставить заявку
+            </h2>
+            <h3>
+                Заполните все поля заявки, и мы скоро свяжемся с вами
+            </h3>
+            <form action="" class="form_transportation form_request">
+                <div class="form_transportation__column">
+                    <div class="form_transportation__row form_transportation__row--checkbox">
+                        <div class="form_request__checkbox">
+                            <input class="custom-checkbox" type="radio" id="individual" name="face" value="phys" checked>
+                            <label for="individual">Физическое лицо</label>
+                        </div>
+                        <div class="form_request__checkbox">
+                            <input class="custom-checkbox" type="radio" id="entity" name="face" value="phys">
+                            <label for="entity">Юридическое</label>
+                        </div>
+                    </div>
+                    <div class="form_transportation__row">
+                        <input type="text" placeholder="Имя*">
+                    </div>
+                    <div class="form_transportation__row individual_row">
+                        <input type="text" placeholder="Телефон*">
+                    </div>
+                    
+                    <div class="form_transportation__row individual_row">
+                        <input type="text" placeholder="Почта*">
+                    </div>
+                    <div class="form_transportation__row individual_row">
+                        <input type="text" placeholder="Оказания услуг">
+                    </div>
+
+                    <div class="form_transportation__row entity_row entity_row--twoitem">
+                        <input type="text" placeholder="Телефон*">
+                        <input type="text" placeholder="Почта*">
+                    </div>
+                    <div class="form_transportation__row entity_row">
+                        <input type="text" placeholder="Компания*">
+                    </div>
+                    <div class="form_transportation__row entity_row">
+                        <input type="text" placeholder="ИНН*">
+                    </div>
+                    
+                </div>
+                <div class="form_transportation__column">
+                    <div class="form_transportation__row individual_row">
+                        <input type="text" placeholder="Откуда">
+                    </div>
+                    <div class="form_transportation__row individual_row">
+                        <input type="text" placeholder="Куда">
+                    </div>
+                    <div class="form_transportation__row entity_row">
+                        <input type="text" placeholder="Город оказания услуги*">
+                    </div>
+                    <div class="form_transportation__row entity_row entity_row--twoitem">
+                        <input type="text" placeholder="Откуда">
+                        <input type="text" placeholder="Куда">
+                    </div>
+                    <div class="form_transportation__row">
+                        <input type="text" placeholder="Тип груза">
+                    </div>
+                    <div class="form_transportation__row">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Сообщений"></textarea>
+                    </div>
+                    
+                </div>
+                
+                <div class="askedquestions__row askedquestions__row--last form_transportation__buttons" >
+                    <span>
+                        Мы гарантируем полную конфиденциальность предоставленной Вами информации
+                    </span>
+                    <button class="btn__submit">Отправить заявку</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="transportstage">
+        <div class="container">
+            <h2 class="transportation__title">
+                Дополнительные услуги, которые чаще всего используют
+            </h2>
+            
+            <div class="transportstage__cont transportstage__cont--dops">
+                <div class="transportstage__block">
+                    <div class="transportstage__img">
+                        <img src="img/perevozki/icons/dop (3).svg" alt="">
+                    </div>
+                    <div class="transportstage__title">
+                        Утепление и укрепление груза
+                    </div>
+                    
+                </div>
+                <div class="transportstage__block">
+                    <div class="transportstage__img">
+                        <img src="img/perevozki/icons/dop (1).svg" alt="">
+                    </div>
+                    <div class="transportstage__title">
+                        Перетарка на нашем складе
+                    </div>
+                    
+                </div>
+                <div class="transportstage__block">
+                    <div class="transportstage__img">
+                        <img src="img/perevozki/icons/dop (2).svg" alt="">
+                    </div>
+                    <div class="transportstage__title">
+                        Доставка от двери до двери
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <section class="askedquestions">
+        <div class="container">
+            <h2 class="transportation__title">
+                Часто задаваемые вопросы
+            </h2>
+            <div class="askedquestions__cont">
+                <div class="askedquestions__column">
+                    <div class="askedquestions__acc">
+                        <div class="askedquestions__button">
+                            Можем ли принять груз у себя на складе?
+                        </div>
+                        <div class="askedquestions__panel">
+                            <div>
+                                <p>Зависит от того,  в какой населённый пункт отправлен контейнер.</p>
+                                <p>Если это Новосибирск или Красноярск, то это 5 дней, если это Магадан или Сахалин, то это от 30 до 45 дней, так как ещё по морю плывут, а там зависит от погоды</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="askedquestions__acc">
+                        <div class="askedquestions__button">
+                            Можем ли принять груз у себя на складе?
+                        </div>
+                        <div class="askedquestions__panel">
+                            <div>
+                                <p>Зависит от того,  в какой населённый пункт отправлен контейнер.</p>
+                                <p>Если это Новосибирск или Красноярск, то это 5 дней, если это Магадан или Сахалин, то это от 30 до 45 дней, так как ещё по морю плывут, а там зависит от погоды</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="askedquestions__acc">
+                        <div class="askedquestions__button">
+                            Можем ли принять груз у себя на складе?
+                        </div>
+                        <div class="askedquestions__panel">
+                            <div>
+                                <p>Зависит от того,  в какой населённый пункт отправлен контейнер.</p>
+                                <p>Если это Новосибирск или Красноярск, то это 5 дней, если это Магадан или Сахалин, то это от 30 до 45 дней, так как ещё по морю плывут, а там зависит от погоды</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="askedquestions__acc">
+                        <div class="askedquestions__button">
+                            Сможем ли предоставить грузчиков для загрузки контейнера?
+                        </div>
+                        <div class="askedquestions__panel">
+                            <div>
+                                <p>Зависит от того,  в какой населённый пункт отправлен контейнер.</p>
+                                <p>Если это Новосибирск или Красноярск, то это 5 дней, если это Магадан или Сахалин, то это от 30 до 45 дней, так как ещё по морю плывут, а там зависит от погоды</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="askedquestions__column">
+                    <form action="#" class="askedquestions__form">
+                        <div class="askedquestions__form__title">
+                            Задать вопрос
+                        </div>
+                        <div class="askedquestions__row">
+                            <input type="text" name="name" placeholder="Имя*">
+                        </div>
+                        <div class="askedquestions__row">
+                            <input type="text" name="phone" placeholder="Телефон*">
+                        </div>
+                        <div class="askedquestions__row">
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="askedquestions__row askedquestions__row--last" >
+                            <span>
+                                Мы гарантируем полную конфиденциальность предоставленной Вами информации
+                            </span>
+                            <button class="btn__submit">Задать вопрос</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        
+    </section>
+    <div class="review_cont container">
+        <div class="title_cont">
+            <h2 class="title_block">
+                Отзывы
+            </h2>
+            <a href="#" class="showmore_btn">
+                Все отзывы
+            </a>
+        </div>
+        <div class="review_slider_cont container">
+            <div class="review_slider_cont-block">
+                <div class="review_slider_cont-rate">
+                    <div class="rate_review">
+                        <img src="img/twemoji_star.svg" alt="">
+                        <img src="img/twemoji_star.svg" alt="">
+                        <img src="img/twemoji_star.svg" alt="">
+                        <img src="img/twemoji_star.svg" alt="">
+                        <img src="img/twemoji_star.svg" alt="">
+                    </div>
+                    <div class="date_review">
+                        13.10.2021
+                    </div>
+                </div>
+                <div class="review_slider_cont-text">
+                    <div class="name_review">
+                        Маргарита К.
+                    </div>
+                    <div class="text_review">
+                        Налаженная работа, сразу чувствуется профессианализм компании. После первого заказа обращаемся регулярно для транспортировки продукции на территории РФ. Ни разу не нарушалась целостность груза. Все сотрудники всегда вежливы и доброжелательны! Компанию рекомендуем.
+                    </div>
+                </div>
+            </div>
+            <div class="review_slider_cont-block">
+                <div class="review_slider_cont-rate">
+                    <div class="rate_review">
+                        <img src="img/twemoji_star.svg" alt="">
+                        <img src="img/twemoji_star.svg" alt="">
+                        <img src="img/twemoji_star.svg" alt="">
+                        <img src="img/twemoji_star.svg" alt="">
+                        <img src="img/twemoji_star.svg" alt="">
+                    </div>
+                    <div class="date_review">
+                        13.10.2021
+                    </div>
+                </div>
+                <div class="review_slider_cont-text">
+                    <div class="name_review">
+                        Маргарита К.
+                    </div>
+                    <div class="text_review">
+                        Налаженная работа, сразу чувствуется профессианализм компании. После первого заказа обращаемся регулярно для транспортировки продукции на территории РФ. Ни разу не нарушалась целостность груза. Все сотрудники всегда вежливы и доброжелательны! Компанию рекомендуем.
+                        Налаженная работа, сразу чувствуется профессианализм компании. После первого заказа обращаемся регулярно для транспортировки продукции на территории РФ. Ни разу не нарушалась целостность груза. Все сотрудники всегда вежливы и доброжелательны! Компанию рекомендуем.
+                        Налаженная работа, сразу чувствуется профессианализм компании. После первого заказа обращаемся регулярно для транспортировки продукции на территории РФ. Ни разу не нарушалась целостность груза. Все сотрудники всегда вежливы и доброжелательны! Компанию рекомендуем.
+
+                        Налаженная работа, сразу чувствуется профессианализм компании. После первого заказа обращаемся регулярно для транспортировки продукции на территории РФ. Ни разу не нарушалась целостность груза. Все сотрудники всегда вежливы и доброжелательны! Компанию рекомендуем.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="review_slider_cont-block">
+                <div class="review_slider_cont-rate">
+                    <div class="rate_review">
+                        <img src="img/twemoji_star.svg" alt="">
+                        <img src="img/twemoji_star.svg" alt="">
+                        <img src="img/twemoji_star.svg" alt="">
+                        <img src="img/twemoji_star.svg" alt="">
+                        <img src="img/twemoji_star.svg" alt="">
+                    </div>
+                    <div class="date_review">
+                        13.10.2021
+                    </div>
+                </div>
+                <div class="review_slider_cont-text">
+                    <div class="name_review">
+                        Маргарита К.
+                    </div>
+                    <div class="text_review">
+                        Налаженная работа, сразу чувствуется профессианализм компании. После первого заказа обращаемся регулярно для транспортировки продукции на территории РФ. Ни разу не нарушалась целостность груза. Все сотрудники всегда вежливы и доброжелательны! Компанию рекомендуем.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slidernav-cont">
+            <button type="button" class="prev_slide">
+                <img src="img/arrow.svg" alt="">
+            </button>
+            <button type="button" class="next_slide">
+                <img src="img/arrow.svg" alt="">
+            </button>
+        </div>
+    </div>
+    <section class="transportstage transportstage--other">
+        <div class="container">
+            <h2 class="transportation__title">
+                Мы так же можем предложить другие виды услуг
+            </h2>
+            
+            <div class="transportstage__cont">
+                <div class="transportstage__block">
+                    <div class="transportstage__img">
+                        <img src="img/perevozki/icons/other_service1.svg" alt="">
+                    </div>
+                    <div class="transportstage__title">
+                        Аренда контейнеров
+                    </div>
+                    
+                </div>
+                <div class="transportstage__block">
+                    <div class="transportstage__img">
+                        <img src="img/perevozki/icons/other_service2.svg" alt="">
+                    </div>
+                    <div class="transportstage__title">
+                        Страхование грузов
+                    </div>
+                    
+                </div>
+                <div class="transportstage__block">
+                    <div class="transportstage__img">
+                        <img src="img/perevozki/icons/other_service3.svg" alt="">
+                    </div>
+                    <div class="transportstage__title">
+                        Ответственное хранение грузов
+                    </div>
+                    
+                </div>
+                <div class="transportstage__block">
+                    <div class="transportstage__img">
+                        <img src="img/perevozki/icons/other_service4.svg" alt="">
+                    </div>
+                    <div class="transportstage__title">
+                        Отслеживание груза
+                    </div>
+                    
+                </div>
+                <div class="transportstage__block">
+                    <div class="transportstage__img">
+                        <img src="img/perevozki/icons/other_service5.svg" alt="">
+                    </div>
+                    <div class="transportstage__title">
+                        Морские грузоперевозки
+                    </div>
+                    
+                </div>
+                <div class="transportstage__block">
+                    <div class="transportstage__img">
+                        <img src="img/perevozki/icons/other_service6.svg" alt="">
+                    </div>
+                    <div class="transportstage__title">
+                        Международные контейнерные перевозки
+                    </div>
+                    
+                </div>
+                <div class="transportstage__block">
+                    <div class="transportstage__img">
+                        <img src="img/perevozki/icons/other_service7.svg" alt="">
+                    </div>
+                    <div class="transportstage__title">
+                        Смешанные грузоперевозки
+                    </div>
+                    
+                </div>
+                <div class="transportstage__block">
+                    <div class="transportstage__img">
+                        <img src="img/perevozki/icons/other_service8.svg" alt="">
+                    </div>
+                    <div class="transportstage__title">
+                        Перевозка легковых автомобилей
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="uk-section uk-section-default">
+        <div class="uk-container">
+            <div class="uk-grid-margin uk-grid uk-grid-stack" uk-grid="">
+                <div class="uk-width-1-1@m uk-first-column">
+                    <div class="uk-margin">
+                        <div class="article-form-wrap uk-section-primary">
+                            <div class="article-form-title uk-text-center">
+                                <span>Консультация специалиста</span><br>
+                                Оставьте свой номер телефона и наш специалист свяжется с вами
+                            </div>
+                            <hr class="uk-divider-icon">
+                            <div class="article-form-form">
+                                <form method="post" class="ajax_form" action="gruzoperevozki/smeshannyie-perevozki/" id="article-form">
+                                    <div class="uk-grid">
+                                        <div class="uk-width-expand@l uk-width-1-2@m">
+                                            <input type="text" name="name" class="input" placeholder="Имя*" required>
+                                        </div>
+                                        <div class="uk-width-expand@l uk-width-1-2@m">
+                                            <input type="text" name="phone" class="input phone-mask" placeholder="Телефон*" required>
+                                        </div>
+                                    </div>
+                                    <div class="forms-private-policy uk-text-center">&#128505; Мы гарантируем полную <a href="private-policy/" target="_blank">конфиденциальность</a> предоставленной Вами информации</div>
+                                    <div class="uk-text-center">
+                                        <input type="submit" name="articleFormSubmit" class="workemail">
+                                        <button type="submit" class="btn submit_btn" onclick="ym(42937064,'reachGoal','konsultatsiya-otpr'); return true;"><i class="far fa-envelope-open"></i> Отправить</button>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="uk-container home2-articles">
+        <h2 class="transportation__title">
+            Статьи
+        </h2>
+        <div id="pdopage" class="blog-article-wrap">
+            <div class="rows">
+                <article class="article-preview" itemscope="" itemtype="http://schema.org/Article">
+                    <div class="article-text">
+                        <div class="article-title" itemprop="name"><a href="about-us/articles/gruzoperevozki-osobennyix-gruzov/">Грузоперевозки особенных грузов</a></div>
+                        <div class="article-desc">
+                            <div class="article-date-detale"><i class="far fa-calendar-alt"></i> Пт апр 1, 2022</div>
+    
+                            <div class="article-img">
+                                <img src="img/gruz3_200x0_310.jpg" alt="Грузоперевозки особенных грузов">
+                            </div>
+    
+                            <span itemprop="description">Определенная часть грузов требует особого отношения. Не все транспортные компании берутся за подобные перевозки, так как не всегда можно создать идеальные условия для транспортировки «капризного» содержимого.</span>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="article-more">
+                        <i class="fas fa-angle-right"></i> <a href="about-us/articles/gruzoperevozki-osobennyix-gruzov/" class="article-more-btn"><b>Подробнее:</b> Грузоперевозки особенных…</a>
+                    </div>
+                    <div itemprop="publisher" itemscope="" itemtype="https://schema.org/Organization">
+                        <span itemprop="logo" itemscope="" itemtype="https://schema.org/ImageObject" style="display: none;">
+                            <img itemprop="url" src="https://sch-logistic.ru/" alt="LTD S.C.H Logistics">
+                            <meta itemprop="width" content="107">
+                            <meta itemprop="height" content="80">
+                        </span>
+                        <meta itemprop="name" content="LTD S.C.H Logistics">
+                        <meta itemprop="telephone" content="">
+                        <meta itemprop="address" content="Москва, ш. Энтузиастов, д. 2">
+                    </div>
+                    <meta itemprop="author" content="LTD S.C.H Logistics">
+                    <meta itemprop="image" content="https://sch-logistic.ru/">
+                    <meta itemprop="headline" content="Грузоперевозки особенных грузов">
+                    <meta itemprop="datePublished" content="2022-04-01">
+                    <meta itemprop="dateModified" content="2022-04-01">
+                    <meta itemprop="mainEntityOfPage" content="about-us/articles/gruzoperevozki-osobennyix-gruzov/">
+                </article>
+                <article class="article-preview" itemscope="" itemtype="http://schema.org/Article">
+                    <div class="article-text">
+                        <div class="article-title" itemprop="name"><a href="about-us/articles/bezopasnost-pogruzchika-na-sklade/">Техника безопасности работы на погрузчике</a></div>
+                        <div class="article-desc">
+                            <div class="article-date-detale"><i class="far fa-calendar-alt"></i> Пт апр 1, 2022</div>
+    
+                            <div class="article-img">
+                                <img src="img/gruz3_200x0_310.jpg" alt="Техника безопасности работы на погрузчике">
+                            </div>
+    
+                            <span itemprop="description">Организовать безопасную работу на складе непросто, но крайне важно. От этого зависит эффективность труда сотрудников, а также соблюдение требований законодательства в отношении безопасности.</span>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="article-more">
+                        <i class="fas fa-angle-right"></i> <a href="about-us/articles/bezopasnost-pogruzchika-na-sklade/" class="article-more-btn"><b>Подробнее:</b> Техника безопасности…</a>
+                    </div>
+                    <div itemprop="publisher" itemscope="" itemtype="https://schema.org/Organization">
+                        <span itemprop="logo" itemscope="" itemtype="https://schema.org/ImageObject" style="display: none;">
+                            <img itemprop="url" src="https://sch-logistic.ru/" alt="LTD S.C.H Logistics">
+                            <meta itemprop="width" content="107">
+                            <meta itemprop="height" content="80">
+                        </span>
+                        <meta itemprop="name" content="LTD S.C.H Logistics">
+                        <meta itemprop="telephone" content="">
+                        <meta itemprop="address" content="Москва, ш. Энтузиастов, д. 2">
+                    </div>
+                    <meta itemprop="author" content="LTD S.C.H Logistics">
+                    <meta itemprop="image" content="https://sch-logistic.ru/">
+                    <meta itemprop="headline" content="Техника безопасности работы на погрузчике">
+                    <meta itemprop="datePublished" content="2022-04-01">
+                    <meta itemprop="dateModified" content="2022-04-01">
+                    <meta itemprop="mainEntityOfPage" content="about-us/articles/bezopasnost-pogruzchika-na-sklade/">
+                </article>
+            </div>
+            <a href="about-us/articles/" class="uk-button uk-button-primary article-btn">Все статьи</a>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha512-bnIvzh6FU75ZKxp0GXLH9bewza/OIw6dLVh9ICg0gogclmYGguQJWl8U30WpbsGTqbIiAwxTsbe76DErLq5EDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js" integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/niceselect.min.js"></script>
+    <script src="js/js.js"></script>
+    <script src="js/transportation.js"></script>
+</body>
+</html>
